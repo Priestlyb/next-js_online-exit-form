@@ -1,0 +1,88 @@
+.container {
+    color: #17054A;
+    padding: 0 2.5rem;
+  }
+  
+  .main {
+    min-height: 75vh;
+    overflow: hidden;
+    padding: 0rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5)
+  ), url(../public/school.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+
+.main h2 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 50%;
+    padding: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.wrapper span {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.form span {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 50px;
+  }
+
+.form textarea{
+    resize: vertical;
+}
+
+.submit{
+    width: 100px;
+    color: snow;
+    font-size: 18px;
+    padding: 5px;
+    background: #07003B;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 1px;
+    }
+    .wrapper {
+      width: 90%;
+      padding: 10px;
+    }
+    .main h2 {
+        font-size: 18px;
+    }
+    .form {
+      justify-content: center;
+    }
+    .form span {
+      width: 80%;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }

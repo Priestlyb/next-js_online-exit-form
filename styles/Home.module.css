@@ -1,0 +1,284 @@
+.container {
+  color: #17054A;
+  padding: 0 2.5rem;
+  padding-top: 5px;
+}
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+), url(../public/school.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.nav {
+  color: #17054A;
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centernav span{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 1px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #222222;
+}
+
+.navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navitem {
+  margin-left: 1rem;
+}
+
+.navlink{
+  font-weight: 400;
+  color: #475569;
+  text-transform: uppercase;
+}
+
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #fff;
+  border: 0;
+  color: #17054A;
+  text-transform: uppercase;
+      cursor: pointer;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropupcontent{
+  width: 280px;
+  display: none;
+  position: absolute;
+  bottom: -240px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropupcontact {
+  width: 300px;
+  display: none;
+  position: absolute;
+  bottom: -240px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropupcontact a {
+  gap: 1;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropupcontent li {
+  gap: 1;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropupcontent{
+  display: block;
+}
+
+.dropup:hover .dropupcontact{
+  display: block;
+}
+
+.adminbtn {
+  font-weight: 600;
+  background-color: #17054A;
+  color: #f1f1f1;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #F4A024;
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.title,
+.description {
+  color:#17054A;
+  text-align: center;
+}
+
+.description {
+  margin: 1rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.sub {
+  color: #17054A;
+  margin: 0.5rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.code {
+  cursor: pointer;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.logo {
+  height: 1em;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+.centernav span{
+  margin-left: 0px;
+}
+  .navmenu {
+      position: fixed;
+      left: -100%;
+      top: 2.5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      padding: 5%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navmenu.active {
+      left: 0;
+  }
+
+  .hamburger {
+      display: block;
+    width: 40px;
+      cursor: pointer;
+    background-color: white;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  .container {
+    padding: 0 5px;
+    padding-top: 5px;
+  }
+  .main {
+    flex-direction: column-reverse;
+  }
+  .centernav span {
+    font-size: 14px;
+  }
+  .dropbtn {
+    font-size: 14px;
+  }
+  .dropupcontact {
+    width: 250px;
+    right: -70px;
+    bottom: -290px;
+  }
+  .dropupcontent {
+    width: 250px;
+    right: -70px;
+    bottom: -215px;
+  }
+  .adminbtn {
+    font-size: 14px;
+    padding: 3px;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .description{
+    width: 50%;
+    font-size: 1rem;
+  }
+  .code {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  .footer a {
+    font-size: 16px;
+  }
+}

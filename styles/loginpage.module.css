@@ -1,0 +1,73 @@
+.container {
+    color: #17054A;
+    padding: 0 2.5rem;
+  }
+  
+  .main {
+    color: azure;
+    min-height: 75vh;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.5)
+    ), url(../public/school.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .formcover {
+    padding: 4rem;
+    background-color: #17054A;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .loginTitle {
+      font-size: 28px;
+      font-weight: 500;
+  }
+  
+  .loginForm> label {
+      margin: 10px 0;
+  }
+  
+  .loginInput {
+      padding: 10px;
+      background-color: white;
+      border: none;
+      border-bottom: 1px solid #2a2a2a;
+  }
+  
+  .loginButton {
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #F4A024;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 15px;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 1px;
+    }
+    .formcover {
+      width: 90%;
+    }
+    .loginTitle {
+      font-size: 22px;
+  }
+  }
