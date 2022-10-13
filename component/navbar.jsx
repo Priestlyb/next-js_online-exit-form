@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from '../styles/Home.module.css'
 
 export default function Navbar() {
@@ -21,7 +21,9 @@ export default function Navbar() {
       <nav className={styles.nav}>
 
         <div className={styles.guuLogo}>
+        <Link href={`/`}>
         <Image src="/guu-logo.png" alt="Guu Logo" width={35} height={35} className={styles.guuLogoImage} />
+        </Link>
         </div>
 
         <div className={styles.centernav}>

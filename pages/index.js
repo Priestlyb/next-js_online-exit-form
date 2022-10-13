@@ -21,7 +21,7 @@ export default function Home() {
         <p className={styles.description}>
           Get started by filling <br />
         <Link href={`/formpage`}>
-        <code className={styles.code}>Exit Form</code>
+        <span className={styles.code}>Exit Form</span>
         </Link>
         </p>
       </main>

@@ -208,7 +208,7 @@ background-size: cover;
       flex-direction: column;
       background-color: #fff;
       width: 100%;
-      padding: 5%;
+      padding: 10%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
@@ -242,10 +242,7 @@ background-size: cover;
   }
   .container {
     padding: 0 5px;
-    padding-top: 5px;
-  }
-  .main {
-    flex-direction: column-reverse;
+    padding-top: 2px;
   }
   .centernav span {
     font-size: 14px;
@@ -273,6 +270,9 @@ background-size: cover;
   .description{
     width: 50%;
     font-size: 1rem;
+  }
+  .description span{
+    margin-top: 50px;
   }
   .code {
     padding: 0.4rem;
